@@ -23,10 +23,13 @@
   "rules": {
     "prettier/prettier": "error",
     "import/extensions": [
-      "error",
+      "error", {
+        "singleQuote": true, "parser": "flow",
+        "endOfLine":"auto"
+      },
       "ignorePackages",
       {
-        "ts": "never"
+        "ts": "never",
       }
     ]
   },
